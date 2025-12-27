@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ERCI Network (ERCI) — Base ERC‑20</title>
+  <meta name="description" content="ERCI Network (ERCI) is a fixed-supply ERC‑20 token deployed on Base (Chain ID 8453). Verified contract and transparent project links." />
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="ERCI Network (ERCI) — Base ERC‑20" />
+  <meta property="og:description" content="Fixed-supply ERC‑20 token on Base. Verified contract and official links." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="mark" title="ERCI">
+          <img src="assets/logo.png" alt="ERCI logo" />
+        </div>
+        <div class="name">
+          <h1>ERCI Network <span class="badge">ERCI</span></h1>
+          <p>Fixed-supply ERC‑20 token on Base • verified contract • transparent links</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="https://basescan.org/address/0xa0d0127a47d9fe53b1c64836ac93e7f74e919b07" target="_blank" rel="noreferrer">BaseScan</a>
+        <a class="btn secondary" href="https://github.com/networktimeerci/ercinetwork" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn secondary" href="https://erci.network" target="_blank" rel="noreferrer">Domain</a>
+        <!-- Add socials when ready -->
+        <!-- <a class="btn secondary" href="https://x.com/YOUR_HANDLE" target="_blank" rel="noreferrer">X</a> -->
+        <!-- <a class="btn secondary" href="https://t.me/YOUR_CHANNEL" target="_blank" rel="noreferrer">Telegram</a> -->
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="card">
+        <h2>Overview</h2>
+        <p>
+          ERCI Network (ERCI) is a simple ERC‑20 token deployed on Base. The smart contract uses standard ERC‑20 behavior
+          with a fixed total supply and no special transfer logic (no taxes, no blacklist, no timelocks, no mint function).
+        </p>
+
+        <div class="notice">
+          <p style="margin:0;">
+            ERCI is an independent project and is not affiliated with third‑party issuers or brands.
+          </p>
+        </div>
+
+        <hr class="hr" />
+
+        <h2>Tokenomics</h2>
+        <ul>
+          <li><strong>Total Supply:</strong> 55,000,000,000 ERCI</li>
+          <li><strong>Decimals:</strong> 18</li>
+          <li><strong>Supply Type:</strong> Fixed (no ongoing minting)</li>
+        </ul>
+
+        <div class="footer">
+          <div>Support: <a href="mailto:support@erci.network">support@erci.network</a></div>
+          <div>Last updated: <span id="d"></span></div>
+        </div>
+      </div>
+
+      <div class="card media">
+        <img src="assets/hero.png" alt="ERCI brand visual" />
+        <img src="assets/theme.png" alt="ERCI theme visual" />
+        <p style="margin:0;">
+          These images are used as brand visuals for the website. The token icon for listings is provided separately in the assets pack.
+        </p>
+      </div>
+    </div>
+
+    <div class="cols">
+      <div class="card">
+        <h2>Contract & Network</h2>
+        <div class="kv">
+          <div class="k">Network</div><div class="v">Base Mainnet</div>
+          <div class="k">Chain ID</div><div class="v">8453</div>
+          <div class="k">Token</div><div class="v">ERCI</div>
+          <div class="k">Contract</div><div class="v"><span class="code">0xa0d0127a47d9fe53b1c64836ac93e7f74e919b07</span></div>
+          <div class="k">Explorer</div><div class="v"><a href="https://basescan.org/address/0xa0d0127a47d9fe53b1c64836ac93e7f74e919b07" target="_blank" rel="noreferrer">basescan.org</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Official Links</h2>
+        <p>Keep all public references consistent across GitHub, the website, and social channels.</p>
+        <div class="kv">
+          <div class="k">Website</div><div class="v"><a href="https://erci.network" target="_blank" rel="noreferrer">erci.network</a></div>
+          <div class="k">GitHub</div><div class="v"><a href="https://github.com/networktimeerci/ercinetwork" target="_blank" rel="noreferrer">networktimeerci/ercinetwork</a></div>
+          <div class="k">X</div><div class="v"><span class="code">TBD</span></div>
+          <div class="k">Telegram</div><div class="v"><span class="code">TBD</span></div>
+        </div>
+
+        <div class="notice">
+          <p style="margin:0;">
+            Tip: after the website is live and liquidity is created, price/chart data will propagate to wallets via DEX indexers and aggregators.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" style="margin-top:18px;">
+      <div>© <span id="y"></span> ERCI Network</div>
+      <div><a href="https://basescan.org/address/0xa0d0127a47d9fe53b1c64836ac93e7f74e919b07" target="_blank" rel="noreferrer">Verified Contract</a></div>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    document.getElementById("y").textContent = now.getFullYear();
+  </script>
+</body>
+</html>
